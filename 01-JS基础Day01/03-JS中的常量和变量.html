@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中的常量和变量</title>
+</head>
+<body>
+<script type="text/html">
+    // 数值常量
+    console.log(3 + 5);
+    console.log(3.3 + 5.5);
+
+    // 字符串常量 '' ""
+    console.log('A');
+    console.log('中国');
+
+    // 布尔常量 真 1，假 0
+    console.log(true);
+    console.log(false);
+
+    // 特殊字符
+    console.log('\n'); // 换行
+    console.log('\t'); // 制表符
+    console.log('\r'); // 回车
+</script>
+<script>
+    // 1. 定义变量
+    var name;
+    var age, sex;
+
+    // 2. 使用变量
+    // = 左右两边各加一个空格
+    name = '漩涡鸣人';
+    age = 12;
+    sex = '男';
+    console.log(name);
+    console.log(age);
+    console.log(sex);
+
+    // 变量初始化
+    // 1. 先定义,后初始化
+    var name;
+    name = '钢铁侠';
+
+    // 2. 定义的同时进行初始化
+    var age = 38;
+
+    // 3. 其它表现形式
+    // 部分初始化
+    var num1, num2 = 100, num3;
+    var age1 = age2 = age3 = 4;
+</script>
+</body>
+</html>

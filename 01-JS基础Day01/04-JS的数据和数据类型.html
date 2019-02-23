@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-JS的数据和数据类型</title>
+</head>
+<body>
+<script type="text/html">
+    console.log(typeof 10);
+    console.log(typeof '10');
+</script>
+<script type="text/html">
+    // 最大值
+    // 1.7976931348623157e+308
+    console.log(Number.MAX_VALUE);
+    // 最小值
+    // 5e-324
+    console.log(Number.MIN_VALUE);
+
+    // 无穷大
+    // Infinity
+    console.log(Number.MAX_VALUE + Number.MAX_VALUE);
+    // 无穷大和无穷小都是数字类型
+    console.log(typeof Infinity);
+    console.log(typeof -Infinity);
+
+    // NaN
+    console.log('中国' - 10);
+</script>
+<script type="text/html">
+    var str1 = undefined;
+    console.log(typeof str1); // 结果是 undefined
+
+    var str2;
+    console.log(typeof str2); // 结果是 undefined
+
+    console.log(typeof str3); // 结果是 undefined
+</script>
+<script type="text/html">
+    var str = null;
+    console.log(str); // null
+    console.log(typeof str); // object
+</script>
+<script type="text/html">
+    var str1 = null;
+    var str2 = undefined;
+    console.log(str1 == str2); // true
+    console.log(str1 === str2); // false
+</script>
+<script type="text/html">
+    var num1 = true;
+    var str1 = num1.toString();
+    console.log(str1);
+</script>
+<script type="text/html">
+    var num;
+    console.log(String(num)); // undefined
+</script>
+<script type="text/html">
+    // +
+    var num = 123;
+    var str = '';
+    console.log(str + num); // 123
+    console.log(typeof (str + num)); // string
+</script>
+<script type="text/html">
+    var str = '\n\t\r  ';
+    console.log(Number(str));
+</script
+>
+<script>
+    var str = '123.12abc7.44';
+    console.log(Number(str)); // NaN
+    console.log(parseInt(str)); // 123
+    console.log(parseFloat(str)); // 123.12
+</script>
+</body>
+</html>

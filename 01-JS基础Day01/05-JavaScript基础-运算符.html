@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基础-运算符</title>
+</head>
+<body>
+<script type="text/html">
+    var res = 10 % 3;
+    console.log(res); // 1
+    res = 10 % 2.5;
+    console.log(res); // 0
+    res = 10 % 0;
+    console.log(res); // NaN
+</script>
+<script type="text/html">
+    var a = '12';
+    a = +a;
+    console.log(a);
+    console.log(typeof a);
+    console.log(typeof NaN);
+</script>
+<script type="text/html">
+    // console.log("1111123" < "124");  // true
+
+    // console.log(null < 1);  // true
+    // console.log(null == 0);  // false
+    // console.log(0 == null); // false
+    // console.log(7 > null); //  true
+    // console.log(undefined == 0);  // false
+    // console.log(NaN == 0);  // false
+    // console.log(NaN == NaN);  // false
+
+    // var num = NaN;
+    // console.log(isNaN(num));  // true
+
+    console.log(null == undefined);  // true
+    console.log(undefined == null);  // true
+    console.log(null === undefined);  // false
+
+</script>
+<script type="text/html">
+    var result = 123 && 'abc';
+    console.log(result);  // abc
+    console.log(typeof result);  // string
+</script>
+<script type="text/html">
+    var res = 100;
+    res = !!res;
+    console.log(res);  // true
+</script>
+<script>
+    // 用户输入三个数字，找到最大值并输出
+    var num1, num2, num3, max;
+
+    num1 = Number(prompt('请输入第一个数'));
+    num2 = +prompt('请输入第二个数');
+    num3 = +(prompt('请输入第三个数'));
+
+    max = (num1 > num2 ? num1 : num2) > num3 ? (num1 > num2 ? num1 : num2) : num3;
+
+    console.log(max);
+
+</script>
+</body>
+</html>
