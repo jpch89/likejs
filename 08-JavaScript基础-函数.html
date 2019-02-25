@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    // 1. 定义函数
+    function log() {
+        console.log(10);
+    }
+
+    debugger;
+
+    // 2. 调用函数
+    log()
+</script>
+<script type="text/html">
+    function sum() {
+        // arguments 对象
+        // console.log(arguments);
+
+        var value = 0;
+        for (var i = 0; i < arguments.length; i++) {
+            value += arguments[i];
+        }
+        console.log(value); // 60
+    }
+
+    sum(10, 20, 30);
+</script>
+<script type="text/html">
+    // 模拟计算器
+    // 总控方法
+    function fn(num1, num2, func) {
+        return func(num1, num2);
+    }
+
+    // 加减乘除函数
+    function add(a, b) {
+        return a + b;
+    }
+
+    function sub(a, b) {
+        return a - b;
+    }
+
+    function mul(a, b) {
+        return a * b;
+    }
+
+    function div(a, b) {
+        return a / b;
+    }
+
+    console.log(fn(10, 20, add));
+    console.log(fn(10, 20, sub));
+    console.log(fn(10, 20, mul));
+    console.log(fn(10, 20, div));
+    /*
+    30
+    -10
+    200
+    0.5
+     */
+
+</script>
+<script type="text/html">
+    function fib(n) {
+        if (n === 1 || n === 2) return 1;
+        return fib(n - 1) + fib(n - 2);
+    }
+</script>
+<script type="text/html">
+    function test() {
+        b = 777;
+    }
+    // 注意：必须先执行一遍，否则报错！
+    test();
+    console.log(b);
+</script>
+<script>
+    var num = 10;
+    fun();
+    function fun() {
+        var num;
+        console.log(num);
+        num = 20;
+    }
+    // 答案：undefined
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-JavaScript基础-流程控制</title>
+    <style>
+        span{
+            border: 1px solid skyblue;
+            padding: 5px;
+            display: inline-block;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/html">
+    var age = 19;
+    if (age > 18)
+    console.log('你是成年人了，可以去上网！');
+</script>
+<script type="text/html">
+    // 从键盘输入一个整数，判断是否为偶数，如果是输出 YES，如果不是输出 NO
+    // 1. 定义一个变量
+    var tmp;
+
+    // 2. 接收用户输入的整数
+    // 2.1 把字符串转成数值
+    tmp = +(window.prompt('请输入一个整数'));
+
+    // 3. 合法性检验
+    if (isNaN(tmp)) {
+    alert('输入的内容有误');
+    } else {
+    // 4. 判断用户输入的整数是否是偶数
+    tmp % 2 === 0 ? window.alert('YES') : window.alert('NO');
+    }
+</script>
+<script type="text/html">
+    var a, b, c;
+
+    a = Number(window.prompt('请输入数字a'))
+    b = Number(window.prompt('请输入数字b'))
+    c = +(window.prompt('请输入数字c'))
+
+    var tmp;
+    if (a > b) {
+    tmp = a;
+    a = b;
+    b = tmp;
+    }
+
+    if (a > c) {
+    tmp = c;
+    a = c;
+    c = tmp;
+    }
+
+    if (b > c) {
+    tmp = b;
+    b = c;
+    c = tmp;
+    }
+
+    console.log(a, b, c)
+
+</script>
+<script type="text/html">
+    var a, b, c;
+    a = +(window.prompt('请输入第一个数'));
+    b = +(window.prompt('请输入第一个数'));
+    c = +(window.prompt('请输入第一个数'));
+
+    var tmp;
+    if (a > b) {
+    tmp = a;
+    a = b;
+    b = tmp;
+    }
+
+    if (b > c) {
+    tmp = b;
+    b = c;
+    c = tmp;
+    }
+
+    if (a > b) {
+    tmp = a;
+    a = b;
+    b = tmp;
+    }
+
+</script>
+<script type="text/html">
+    // 剪刀石头布
+    // 0-剪刀，1-石头，2-布
+
+    // 1. 定义变量，玩家和电脑
+    var player, computer;
+
+    // 2. 电脑出拳
+    computer = Math.floor(Math.random() * 3);
+
+    // 3. 玩家出拳
+    player = +(window.prompt('请出拳：0.剪刀 1.石头 2.布'));
+
+    // 4. 判断比较
+    if (player < 0 || player > 2) {
+    window.prompt('请重新出拳');
+    } else {
+    if (
+    player === 0 && computer === 2 ||
+    player === 1 && computer === 0 ||
+    player === 2 && computer === 1
+    ) {
+    alert('恭喜您，赢了！');
+    } else if (
+    computer === 0 && player === 2 ||
+    computer === 1 && player === 0 ||
+    computer === 2 && player === 1
+    ) {
+    alert('很遗憾，你输了！');
+    } else {
+    alert('平局！');
+    }
+    }
+</script>
+<script type="text/html">
+    var n = 1;
+    switch (n) {
+    case 0:
+    console.log(0);
+    break;
+    default:
+    console.log('unknown');
+    }
+</script>
+<script type="text/html">
+    /*
+    成绩判定：
+    A 90 - 100
+    B 80 - 89
+    C 70 - 79
+    D 60 - 69
+    E 0 - 59
+    */
+    var score;
+    score = +(window.prompt('请输入0-100之间的分数\n'));
+    var level;
+    switch (level = Math.floor(score / 10)) {
+    case 10:
+    alert('满分');
+    break;
+    default:
+    alert('渣渣');
+    }
+
+</script>
+<script type="text/html">
+    for (var i = 1; i < 3; i++) {
+    console.log('好友列表' + i);
+    for (var j = 1; j <= 3; j++) {
+    console.log('   好友' + j);
+    }
+    }
+</script>
+<script>
+    for (var i = 1; i <= 9; i++) {
+        for (var j = 1; j <= i; j++) {
+            document.write('<span>' + j + '*' + i + '=' + j * i + '</span>');
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>
