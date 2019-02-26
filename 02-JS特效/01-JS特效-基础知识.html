@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn" class="my-btn" name="btn">点我</button>
+<script>
+    // 1. 获取事件源
+    var btn1 = document.getElementById('btn');
+    console.log(btn1);
+
+    var btns = document.getElementsByClassName('my-btn');
+    console.log(btns);
+
+    var btn2 = btns[0];
+    console.log(btn2);
+    // 或者直接这么写
+    // var btns = document.getElementsByClassName('my-btn')[0];
+
+    var btn3 = document.getElementsByTagName('button')[0];
+    console.log(btn3);
+
+    var btn4 = document.getElementsByName('btn')[0];
+    console.log(btn4);
+
+    // 这种方式只能拿到第一个！
+    var btn5 = document.querySelector('#btn');
+    console.log(btn5);
+
+    var btn6 = document.querySelectorAll('.my-btn')[0];
+    console.log(btn6);
+
+</script>
+</body>
+</html>

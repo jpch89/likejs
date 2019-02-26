@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="551ac05a-8b15-4e75-bf7a-52bc6616e2a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10-JavaScript基础-数据类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-JavaScript基础-数组高级API.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-JS特效/01-JS特效-基础知识.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-JS特效/02-JS特效-节点关系.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-JS特效/03-DOM节点操作.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript的语法规范.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Javascript 初体验.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-JS中的常量和变量.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-JS的数据和数据类型.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-JavaScript基础-运算符.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-JavaScript基础-流程控制.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-JavaScript基础-数组.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-JavaScript基础-函数.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-JavaScript基础-数据类型.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-JavaScript基础-数组高级API.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,15 +31,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/11-JavaScript基础-数组高级API.html">
+        <entry file="file://$PROJECT_DIR$/02-JS特效/03-DOM节点操作.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="732">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -60,6 +67,11 @@
         <option value="$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html" />
         <option value="$PROJECT_DIR$/10-JavaScript基础-数据类型.html" />
         <option value="$PROJECT_DIR$/11-JavaScript基础-数组高级API.html" />
+        <option value="$PROJECT_DIR$/02-JS特效/01-JS特效-基础知识.html" />
+        <option value="$PROJECT_DIR$/02-JS特效/案例-关闭小广告.html" />
+        <option value="$PROJECT_DIR$/02-JS特效/案例-图标切换.html" />
+        <option value="$PROJECT_DIR$/02-JS特效/02-JS特效-节点关系.html" />
+        <option value="$PROJECT_DIR$/02-JS特效/03-DOM节点操作.html" />
       </list>
     </option>
   </component>
@@ -88,7 +100,7 @@
             <path>
               <item name="likejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="likejs" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="02-JS特效" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -128,12 +140,12 @@
       <updated>1550879700204</updated>
       <workItem from="1550879701896" duration="26397000" />
       <workItem from="1551057098224" duration="21426000" />
-      <workItem from="1551143704194" duration="10326000" />
+      <workItem from="1551143704194" duration="19741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58149000" />
+    <option name="totallyTimeSpent" value="67564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
@@ -200,13 +212,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/11-JavaScript基础-数组高级API.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state relative-caret-position="480">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-JS特效/01-JS特效-基础知识.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-JS特效/案例-关闭小广告.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-JS特效/案例-图标切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JS基础/01-JavaScript的语法规范.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-JS特效/02-JS特效-节点关系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="n#script#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#html#0;n#!!top" />
+            <element signature="n#script#5;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-JS特效/03-DOM节点操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>

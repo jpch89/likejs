@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM节点操作</title>
+    <style>
+        #box{
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p id="word">哈哈啊哈</p>
+        <button>点我</button>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        // 增删改查
+
+        var box = document.querySelector('#box');
+        // 1. 创建节点
+        var img = document.createElement('img');
+        img.src = 'img/img1.jpg';
+        // box.appendChild(img);
+        var btn = document.getElementsByTagName('button')[0];
+        box.insertBefore(img, btn);
+
+        // 2. 删除节点
+        var word = document.getElementById('word');
+        // word.parentNode.removeChild(word);  // 自杀
+        word.remove();
+    };
+</script>
+</html>
