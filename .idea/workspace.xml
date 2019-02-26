@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="551ac05a-8b15-4e75-bf7a-52bc6616e2a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JS基础Day01/07-JavaScript基础-数组.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JS基础Day01/08-JavaScript基础-函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-JavaScript基础-数据类型.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-JavaScript基础-数组高级API.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JS基础Day01/06-JavaScript基础-流程控制.html" beforeDir="false" afterPath="$PROJECT_DIR$/01-JS基础Day01/06-JavaScript基础-流程控制.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,18 +17,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01-JS基础Day01/08-JavaScript基础-函数.html">
+        <entry file="file://$PROJECT_DIR$/11-JavaScript基础-数组高级API.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="83" selection-start-line="83" selection-end-line="90" selection-end-column="19" />
+            <state relative-caret-position="330">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding>
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -60,14 +57,17 @@
         <option value="$PROJECT_DIR$/01-JS基础Day01/06-JavaScript基础-流程控制.html" />
         <option value="$PROJECT_DIR$/01-JS基础Day01/07-JavaScript基础-数组.html" />
         <option value="$PROJECT_DIR$/01-JS基础Day01/08-JavaScript基础-函数.html" />
+        <option value="$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html" />
+        <option value="$PROJECT_DIR$/10-JavaScript基础-数据类型.html" />
+        <option value="$PROJECT_DIR$/11-JavaScript基础-数组高级API.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="84" />
     <option name="y" value="24" />
-    <option name="width" value="1751" />
-    <option name="height" value="1091" />
+    <option name="width" value="1752" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -88,7 +88,7 @@
             <path>
               <item name="likejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="likejs" type="462c0819:PsiDirectoryNode" />
-              <item name="01-JS基础Day01" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -127,18 +127,19 @@
       <option name="presentableId" value="Default" />
       <updated>1550879700204</updated>
       <workItem from="1550879701896" duration="26397000" />
-      <workItem from="1551057098224" duration="20702000" />
+      <workItem from="1551057098224" duration="21426000" />
+      <workItem from="1551143704194" duration="10326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47099000" />
+    <option name="totallyTimeSpent" value="58149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20365359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20364127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -161,79 +162,22 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/01-JavaScript的语法规范.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/02-Javascript 初体验.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/03-JS中的常量和变量.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/04-JS的数据和数据类型.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/05-JavaScript基础-运算符.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/06-JavaScript基础-流程控制.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/07-JavaScript基础-数组.html" />
+    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/08-JavaScript基础-函数.html" />
+    <entry file="file://$PROJECT_DIR$/01-JavaScript的语法规范.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/01-JavaScript的语法规范.html">
+    <entry file="file://$PROJECT_DIR$/09-JavaScript基础-对象和面向对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/02-Javascript 初体验.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/03-JS中的常量和变量.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/04-JS的数据和数据类型.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#scriptt#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/05-JavaScript基础-运算符.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/06-JavaScript基础-流程控制.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="476">
+          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
@@ -247,30 +191,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/07-JavaScript基础-数组.html">
+    <entry file="file://$PROJECT_DIR$/10-JavaScript基础-数据类型.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JS基础Day01/08-JavaScript基础-函数.html">
+    <entry file="file://$PROJECT_DIR$/11-JavaScript基础-数组高级API.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="83" selection-start-line="83" selection-end-line="90" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

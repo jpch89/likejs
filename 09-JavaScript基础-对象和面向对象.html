@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象和面向对象</title>
+</head>
+<body>
+<script type="text/html">
+    var dog = {
+        name: '旺财',
+        age: 10,
+        dogFriends: ['阿黄', '飞毛腿'],
+
+        eat: function() {
+            console.log('吃');
+        },
+        run: function() {
+            console.log('跑');
+        }
+    };
+    console.log(dog);
+    console.log(dog.name);
+    dog.run();
+    dog.name = '张三';
+    console.log(dog.name);
+</script>
+<script type="text/html">
+    // 1. 构造函数
+    function Person() {
+        var obj = new Object();
+        // 属性
+        obj.name = null;
+        obj.age = null;
+        obj.sex = null;
+
+        // 方法
+        obj.study = function () {
+            console.log(this.name + '学习');
+        };
+
+
+        return obj;
+    }
+
+    var p = Person();
+    console.log(p);
+</script>
+<script type="text/html">
+    // 1. 构造函数
+    function Dog(name, age, dogFriends) {
+        this.name = name;
+        this.age = age;
+        this.dogFriends = dogFriends;
+
+        this.eat = function (something) {
+            console.log(this.name + '在吃' + something);
+        }
+
+    }
+
+    var smallDog = new Dog('小花', 1);
+    console.log(smallDog.name);
+    smallDog.eat('肉骨头');
+
+</script>
+<script type="text/html">
+    // 1. 构造函数
+    function Dog(option) {
+        this.name = option.name;
+        this.age = option.age;
+        this.dogFriends = option.dogFriends;
+
+        this.eat = function (something) {
+            console.log(this.name + '在吃' + something);
+        }
+
+    }
+
+    var bigDog = new Dog({name: '旺财', age: 5});
+    console.log(bigDog);
+</script>
+<script type="text/html">
+    var arr = [];
+    var obj = {};
+
+    var arr1 = new Array();
+    var obj1 = new Object();
+</script>
+<script type="text/html">
+    Array.prototype.eat = function () {
+        alert('我会吃东西');
+    };
+
+    var arr = new Array();
+    arr.eat();
+</script>
+<script type="text/html">
+    console.log(Array.constructor);  // function Function()
+    var arr = [];
+    console.log(arr.constructor);  // function Array()
+</script>
+<script type="text/html">
+    function Dog(option) {
+        this.name = option.name;
+        this.age = option.age;
+        this.dogFriends = option.dogFriends;
+    }
+    Dog.prototype.eat = function(something) {
+        console.log(this.name + '在吃' + something);
+    };
+
+    // 或者这么写
+    Dog.prototype = {
+      run: function() {
+          console.log(this.name + '在跑');
+      }
+    };
+
+    mydog = new Dog({name: '叮咚', age: 2});
+    console.log(mydog);
+    mydog.run();
+    mydog.eat('饼干');  // 这里会报错，因为后面的 prototype 把前面的覆盖了
+</script>
+<script>
+    function Dog(option) {
+        this._init(option);
+    }
+
+    Dog.prototype = {
+        _init: function(option) {
+            this.name = option.name;
+            this.age = option.age;
+        },
+        eat: function(sth) {
+            console.log(this.name + '在吃' + sth);
+        }
+    };
+</script>
+</body>
+</html>
