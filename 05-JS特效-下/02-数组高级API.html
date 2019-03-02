@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    // 1. instanceof
+    var arr = [1, 2, 3];
+    console.log(typeof arr);  // object
+    console.log(arr instanceof Array);  // true
+    console.log(arr instanceof Object);  // true
+
+</script>
+<script type="text/html">
+    // 2. Array.isArray(变量)
+    var arr = [1, 2];
+    var arr2 = new Array();
+    console.log(Array.isArray(arr));  // true
+    console.log(Array.isArray(arr2));  // true
+
+</script>
+<script type="text/html">
+    var arr = [1, 2, "哈哈", 121];
+    console.log(arr.toString());  // 1,2,哈哈,121
+    console.log(typeof arr.toString());  // string
+</script>
+<script type="text/html">
+    var arr = [1, 2];
+    console.log(arr.valueOf());  // 数组本身
+    console.log(arr === arr.valueOf());  // true
+</script>
+<script>
+    var arr = [1, 2, 33, 2, 1];
+    console.log(arr.indexOf(2));  // 1
+    console.log(arr.lastIndexOf(2));  // 3
+</script>
+</body>
+</html>

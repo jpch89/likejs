@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box{
+            border: 1px solid #ccc;
+            width: 360px;
+            height: 70px;
+            padding-top: 360px;
+            margin: 100px auto;
+
+            background: url("img/01big.jpg") no-repeat;
+        }
+
+        ul{
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li id="li01"><img src="img/01.jpg" alt=""></li>
+        <li id="li02"><img src="img/02.jpg" alt=""></li>
+        <li id="li03"><img src="img/03.jpg" alt=""></li>
+        <li id="li04"><img src="img/04.jpg" alt=""></li>
+        <li id="li05"><img src="img/05.jpg" alt=""></li>
+    </ul>
+</div>
+<script>
+    window.onload = function () {
+
+        /**
+         * 根据 id 获取标签
+         * @param {string}id
+         * @returns {any}
+         */
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+
+        /**
+         * 改变背景图片
+         * @param {string}liId
+         * @param {string}imgSrc
+         */
+        function changeImage(liId, imgSrc) {
+            $(liId).onmouseover = function () {
+                $("box").style.background = imgSrc;
+            };
+        }
+
+        // 1. 获取需要的标签
+        // 2. 监听鼠标的进入
+        changeImage("li01", "url('img/01big.jpg') no-repeat");
+        changeImage("li02", "url('img/02big.jpg') no-repeat");
+        changeImage("li03", "url('img/03big.jpg') no-repeat");
+        changeImage("li04", "url('img/04big.jpg') no-repeat");
+        changeImage("li05", "url('img/05big.jpg') no-repeat");
+
+    };
+</script>
+</body>
+</html>

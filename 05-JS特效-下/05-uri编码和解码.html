@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    var str = "http://www.itmoma.com?name=yann";
+    var str1 = "http://localhost:63342/likejs/05-JS%E7%89%B9%E6%95%88-%E4%B8%8B/05-uri%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81.html?_ijt=qh6m9f2n1i4p7ugfl4ptggvhls";
+
+    // 1. uri 编码
+    var encodedstr = encodeURIComponent(str);
+    console.log(encodedstr);
+    // http%3A%2F%2Fwww.itmoma.com%3Fname%3Dyann
+
+    // 2. 解码
+    var decodedstr = decodeURIComponent(str1);
+    console.log(decodedstr);
+
+</script>
+<script>
+    var num = 3.1470;
+    console.log(num.toFixed(2));
+    // 3.15
+</script>
+</body>
+</html>

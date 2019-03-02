@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <input id="ipt2" type="text">
+    <p>今天天气很好</p>
+</div>
+<!--<input type="text" value="请输入用户名">-->
+<input id="ipt" type="text">
+<script>
+    window.onload = function () {
+        var ipt = document.getElementById("ipt");
+        ipt.value = "你好";
+        console.log(ipt.value);
+
+        var box = document.getElementById("box");
+        console.log(box.innerHTML);
+        console.log(box.innerText);
+    };
+</script>
+</body>
+</html>

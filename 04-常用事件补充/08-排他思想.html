@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排他思想</title>
+</head>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+<button>按钮4</button>
+<button>按钮5</button>
+<button>按钮6</button>
+<script>
+    window.onload = function () {
+        // 1. 获取所有的按钮
+        var btns = document.querySelectorAll("button");
+
+        // 2. 遍历
+        for (var i = 0; i < btns.length; i++) {  // 同步
+            btns[i].id = i + 1;
+            btns[i].onclick = function () {
+                alert("点击了按钮" + this.id);
+            };
+        }
+    };
+</script>
+</body>
+</html>

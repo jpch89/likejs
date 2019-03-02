@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = 10.989;
+    var num2 = "10.49哈哈哈";
+    var num3 = "1.76";
+    var num4 = "哈哈1.77";
+    var num5;
+
+    console.log(Math.ceil(num));  // 11
+    console.log(Math.floor(num));  // 10
+    console.log(Math.round(num));  // 11
+    console.log(parseInt(num));  // 10
+    console.log(parseInt(num2));  // 10
+    console.log(Number(num2));  // NaN
+    console.log(Number(num3));  // 1.76
+    console.log(parseInt(num4));  // NaN
+    console.log(parseFloat(num2));  // 10.49
+    console.log(parseInt(""));  // NaN
+    console.log(parseInt(num5)); // NaN
+
+</script>
+</body>
+</html>

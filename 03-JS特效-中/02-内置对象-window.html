@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置对象window</title>
+</head>
+<body>
+<script type="text/html">
+    var str = "张三";
+    console.log(str);
+    console.log(window.str);
+
+    function func() {
+        var age = 19;
+    }
+    console.log(window.age);  // 这样不行
+
+    func();
+    window.func();
+</script>
+<script type="text/html">
+    console.log(111);
+    console.log(222);
+    // 动态跳转
+    window.location.href = "http://www.baidu.com";
+    console.log(333);
+    console.log(444);
+    console.log(555);
+</script>
+<script>
+    console.log(document);
+
+</script>
+</body>
+</html>

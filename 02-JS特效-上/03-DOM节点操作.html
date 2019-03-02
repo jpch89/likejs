@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM节点操作</title>
+    <style>
+        #box{
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p id="word">哈哈啊哈</p>
+        <button>点我</button>
+        <img src="img/img1.jpg">
+    </div>
+</body>
+<script type="text/html">
+    window.onload = function () {
+        // 增删改查
+
+        var box = document.querySelector('#box');
+        // 1. 创建节点
+        var img = document.createElement('img');
+        img.src = 'img/img1.jpg';
+        // box.appendChild(img);
+        var btn = document.getElementsByTagName('button')[0];
+        box.insertBefore(img, btn);
+
+        // 2. 删除节点
+        var word = document.getElementById('word');
+        // word.parentNode.removeChild(word);  // 自杀
+        word.remove();
+    };
+</script>
+<script type="text/html">
+    window.onload = function () {
+        var box = document.getElementsByClassName('box')[0];
+        // var newTag = box.cloneNode(false);  // false 是浅拷贝，只拷贝一层
+        var newTag = box.cloneNode(true);  // 深拷贝
+        console.log(newTag);
+
+        document.body.appendChild(newTag);
+    };
+</script>
+<script>
+    window.onload = function () {
+        var img = document.getElementsByTagName('img')[0];
+        // 1. 获取：getAttribute(名称)
+        console.log(img.getAttribute("src"));  // 里面写的是什么，获取出来就是什么
+        console.log(img.src);  // 带 http 前缀的一串地址
+        // 2. 设置：setAttribute(名称, 值)
+        img.setAttribute("alt", "图片");
+        img.setAttribute("unknown", "未知");
+        // 非自带的属性，无法通过 img.属性名 获取
+        console.log(img.alt);
+        console.log(img.unknown);  // undefined
+        console.log(img.getAttribute('unknown'));  // 未知
+    }
+</script>
+</html>
