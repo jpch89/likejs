@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">3秒后吃饭</button>
+    <button id="stop">停止</button>
+    <script>
+        window.onload = function () {
+            // 1. 获取需要的标签
+            var btn = document.getElementById("btn");
+            var stop = document.getElementById("stop");
+            var timer = null;
+
+            // 2. 监听按钮的点击
+            btn.onclick = function () {
+                // 清除定时器
+                clearTimeout(timer);
+
+                // 一次定时器
+                timer = setTimeout(function () {
+                    alert("请你去吃饭");
+                }, 3000);
+            };
+
+            stop.onclick = function () {
+                clearTimeout(timer);
+            };
+        };
+    </script>
+</body>
+</html>
