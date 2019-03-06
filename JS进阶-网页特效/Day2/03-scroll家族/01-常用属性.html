@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/html">
+    console.log(document.compatMode);  // CSS1Compat
+    window.onscroll = function () {
+        // 所以下面这种形式拿不到，只能通过 document.documentElement 来获取
+        // console.log(document.body.scrollTop, document.body.scrollLeft);
+        console.log(document.documentElement.scrollTop, document.documentElement.scrollLeft);
+    };
+</script>
+<script>
+    window.onscroll = function () {
+        // ie9+ 和最新浏览器
+        // console.log(window.pageXOffset, window.pageYOffset);
+
+        console.log(document.documentElement.scrollTop)
+
+    };
+</script>
+</body>
+</html>

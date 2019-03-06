@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星星海特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body{
+            background-color: #000000;
+        }
+
+        span{
+            width: 30px;
+            height: 30px;
+            background: url("images/star.png") no-repeat;
+            position: absolute;
+            background-size: 100% 100%;
+            animation: flash 1s alternate infinite;
+        }
+
+        span:hover{
+            /*为什么要加 !important 不是很理解*/
+            transform: scale(2, 2) rotate(180deg) !important;
+            transition: all 1s;
+        }
+        
+        @keyframes flash {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        // 1. 求出屏幕的尺寸
+        var screenW = document.documentElement.clientWidth - 30;
+        // documentElement 相当于 body，只不过这里采用了兼容的写法
+        var screenH = document.documentElement.clientHeight - 30;
+
+        // 2. 动态创建星星
+        for (var i = 0; i < 180; i ++) {
+            // 2.1 创建星星
+            var span = document.createElement("span");
+            document.body.appendChild(span);
+
+            // 2.2 随机的坐标
+            var x = parseInt(Math.random() * screenW);
+            var y = parseInt(Math.random() * screenH);
+
+            span.style.left = x + "px";
+            span.style.top = y + "px";
+
+            // 2.3 随机缩放
+            var scale = Math.random() * 1.2;
+            span.style.transform = "scale(" + scale + ", " + scale + ")";
+
+            // 2.4 随机延迟闪烁
+            var rate = Math.random() * 1.5;
+            span.style.animationDelay = rate + "s";
+        }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            padding: 10px;
+            border: 5px solid #dddddd;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" style="width: 100px; height: 100px; padding: 10px; border: 5px solid #ccc;"></div>
+    <script>
+        var box = document.getElementById("box");
+
+        // 内容 + 内边距 + 边框
+        // 得到的是数值！
+        console.log(box.offsetHeight);
+        console.log(box.offsetWidth);
+
+        // 只能获取行内样式，并且长度只包含内容区域
+        // 得到的是字符串！带 px 单位的。
+        console.log(box.style.width);
+        console.log(box.style.height);
+
+        // 注意：更改宽高的时候只能通过 style.width 和 style.height 来更改
+    </script>
+</body>
+</html>
