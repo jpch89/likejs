@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../03-onresize/js/myfuncs.js"></script>
+<script>
+    // 优先级顺序
+    console.log(window.innerWidth, window.innerHeight);
+    console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+    console.log(document.body.clientWidth, document.body.clientHeight);
+
+    // 使用封装好的函数
+    console.log(client().width, client().height);
+</script>
+</body>
+</html>

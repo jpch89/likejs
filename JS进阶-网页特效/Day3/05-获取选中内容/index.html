@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        p{
+            margin: 100px;
+            width: 300px;
+        }
+
+        #share_text{
+            background-color: deepskyblue;
+            width: 150px;
+            color: orangered;
+            position: absolute;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="word">
+        皇马首回合险胜而归。这是两队第14次欧战交手，皇马8胜1平4负占据优势，其中主场4胜2负。皇马欧战历史上第14次主场对阵荷兰球队，此前13次交锋取得10胜1平2负，这两次失利均是对阵阿贾克斯。阿贾克斯上次客胜皇马还是1995年。皇马近9个欧冠淘汰赛均胜出并期待连续9年晋级欧冠8强。皇马4天内主场两负巴萨，卢卡斯和纳乔轮换出场。阿贾克斯则排出与首回合相同的首发阵容。配置方面，新车搭载全新搭载ADAS高级驾驶辅助系统， 包含LDW、FCW、AEB和ACC四大功能。有效提升汽车驾驶的安全性与舒适性。在车道偏离、前方碰撞、紧急刹车、自动巡航车况时能有效提前预判及报警，为车主提供全方位的主动安全守护。内饰部分，新车采用三辐式多功能方向盘，并将搭载10.4英寸高清触控电容屏，质感方面有所提升。此外，新车全系标配了互联系统，为用户带来智能出行新体验。
+    </p>
+    <div id="share_text"></div>
+    <script src="js/myfuncs.js"></script>
+    <script>
+        window.onload = function () {
+            // 1. 监听鼠标的抬起
+            $("word").onmouseup = function (event) {
+                // 1.0 兼容
+                var e = event || window.event;
+                // 1.1 选中的文字
+                var selectedText;
+                if (window.getSelection) {  // 标准模式，获取选中的文字
+                    selectedText = window.getSelection().toString();
+                } else {  // IE 系列
+                    selectedText = document.selection.createRange().text;
+                }
+
+                if (selectedText !== "") {
+                    // 1.2 显示面板
+                    $("share_text").innerText = selectedText;
+                    show($("share_text"));
+
+                    // 1.3 改变位置
+                    $("share_text").style.left = e.clientX + "px";
+                    $("share_text").style.top = e.clientY + "px";
+                }
+            };
+
+            // 2. 监听文档的点击
+            document.onmousedown = function (event) {
+                // 2.0 兼容
+                var e = event || window.event;
+                // 2.1 获取点击区域的 id
+                var targetId = e.target ? e.target.id : e.srcElement.id;
+                // 2.2 判断
+                if (targetId !== "share_text") {
+                    hide($("share_text"));
+                }
+                // 2.3 取消选中
+                window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+            };
+        };
+    </script>
+</body>
+</html>

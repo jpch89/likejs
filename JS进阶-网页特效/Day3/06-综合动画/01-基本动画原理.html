@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: yellowgreen;
+            position: absolute;
+            left: 0;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">往右走</button>
+<div id="box"></div>
+<script src="js/myfuncs.js"></script>
+<script>
+    window.onload = function () {
+        var timer = null;
+        var end = 600;
+        var box = $("box");
+
+        $("btn").onclick = function () {
+            // 1. 清除定时器
+            clearInterval(timer);
+
+            // 2. 设置定时器
+            timer = setInterval(function () {
+                if (box.offsetLeft >= end) {
+                    clearInterval(timer);
+                    box.style.left = end + "px";
+                }
+                box.style.left = box.offsetLeft + 10 + "px";
+            }, 20);
+        };
+    };
+
+</script>
+</body>
+</html>

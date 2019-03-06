@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 20px;
+            border: 10px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+<script>
+    var box = document.getElementById("box");
+    console.log(box.clientWidth, box.clientHeight);
+    // 240, 240  可见区域的宽高，不包括边框
+    // 记忆：网页的可见区域是不包括浏览器的边框的
+    console.log(box.offsetWidth, box.offsetHeight);
+    // 260, 260  包括了边框
+
+    console.log(box.clientLeft, box.clientTop);
+    // 10, 10  元素一边边框的值
+    console.log(box.offsetLeft, box.offsetTop);
+    // 8, 8 没有清除样式，得到的是距离父元素的边框之间的间距
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/myfuncs.js"></script>
+<script>
+    // 当屏幕的宽度 >= 960 的时候：红色
+    // 当屏幕的宽度 >= 640 的时候：蓝色
+    // 当屏幕的宽度 < 640 的时候：绿色
+    window.onload = function () {
+        changeColor();
+
+        window.onresize = changeColor;  // 这里设置的是回调函数，不能加小括号！
+
+        function changeColor() {
+            if (client().width >= 960) {
+                document.body.style.backgroundColor = "red";
+            } else if (client().width >= 640) {
+                document.body.style.backgroundColor = "blue";
+            } else {
+                document.body.style.backgroundColor = "green";
+            }
+        }
+    };
+</script>
+</body>
+</html>

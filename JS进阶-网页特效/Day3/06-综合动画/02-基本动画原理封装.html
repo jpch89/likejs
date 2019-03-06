@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: yellowgreen;
+            position: absolute;
+            left: 0;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">往右走</button>
+<div id="box"></div>
+<script src="js/myfuncs.js"></script>
+<script>
+    window.onload = function () {
+        $("btn").onmousedown = function () {
+            constant($("box"), 400, 20);
+        };
+    };
+
+    /**
+     * 匀速动画函数
+     * @param {object}obj
+     * @param {number}target
+     * @param {number}speed
+     */
+    function constant(obj, target, speed) {
+        // 1. 清除定时器
+        clearInterval(obj.timer);
+
+        // 2. 设置定时器
+        obj.timer = setInterval(function () {
+            if (obj.offsetLeft >= target) {
+                clearInterval(obj.timer);
+                obj.style.left = target + "px";
+            }
+            obj.style.left = obj.offsetLeft + speed + "px";
+        }, 20);
+    }
+
+</script>
+</body>
+</html>

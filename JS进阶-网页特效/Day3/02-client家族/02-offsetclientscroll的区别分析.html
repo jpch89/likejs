@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 20px;
+            border: 10px solid #000;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+    <p>世界你好</p>
+</div>
+<script>
+    var box = document.getElementById("box");
+
+    // 1. width height
+    // border + padding + 内容的宽高
+    console.log(box.offsetWidth, box.offsetHeight);
+    // padding + 内容的宽高
+    console.log(box.clientWidth, box.clientHeight);
+    // 滚动宽度和滚动高度
+    console.log(box.scrollWidth, box.scrollHeight);
+
+    // 2. top left
+    // 相对第一个有定位的父盒子的左边和上边的距离（边框间距离不含边框）
+    console.log(box.offsetLeft, box.offsetTop);
+    // 左边边框的宽度，上边边框的宽度（很少这样拿宽度）
+    console.log(box.clientLeft, box.clientTop);
+    // 左边滚动的长度，上边滚动的长度
+    console.log(box.scrollLeft, box.scrollTop);
+</script>
+</body>
+</html>
