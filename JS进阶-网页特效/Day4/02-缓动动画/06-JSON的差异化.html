@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var dataArr = [10, 20, 50, 100];
+    dataArr.forEach(function (item, index, arr) {
+        // console.log(item, index);
+    });
+
+    var obj = {left: 300, top: 200, width: 500};
+    // 对象没有 forEach 方法
+    for (var key in obj) {
+        console.log(key);
+
+        // 点语法拿不到！
+        // console.log(obj.key);
+        // 拿不到的原因是，key 是字符串的类型
+        console.log(typeof key);  // string
+
+        // 只能用下标语法取
+        console.log(obj[key]);
+    }
+
+</script>
+</body>
+</html>

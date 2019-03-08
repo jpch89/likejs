@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            border: 5px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" style="width: 400px;"></div>
+    <button id="btn">获取属性值</button>
+    <script>
+        var box = document.getElementById("box");
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            console.log(box.style.width);
+            console.log(box.style.height);
+            console.log(box.style.border);
+
+            console.log(getCssStyleValue(box, "width"));
+            console.log(getCssStyleValue(box, "height"));
+            console.log(getCssStyleValue(box, "border"));
+        };
+
+        function getCssStyleValue(obj, attr) {
+            if (obj.currentStyle) {  // IE 和 Opera
+                return obj.currentStyle[attr];
+            } else {
+                return window.getComputedStyle(obj, null)[attr];
+            }
+        }
+    </script>
+</body>
+</html>
