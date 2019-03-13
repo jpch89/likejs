@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 字面量的方式创建对象
+        // 复用性差
+        // 创建多个对象代码冗余度高
+        // 字面量对象的形式多用于数据的传递
+        var p1 = {
+            name: "张三",
+            run: function () {
+                console.log(this.name + "跑");
+            }
+        };
+    </script>
+    <script>
+        // 2. 内置构造函数创建对象
+        // 缺点与上面一样
+        var p1 = new Object();
+        p1.name = "张三";
+        p1.run = function () {
+            console.log(this.name + "跑");
+        }
+    </script>
+    <script>
+        // 3. 工厂函数创建对象
+        function createPerson(name) {
+            var o = new Object();
+            o.name = name
+            o.run = function () {
+                console.log(this.name + "跑");
+            };
+            return o;
+        }
+    </script>
+    <script>
+        // 4. 自定义构造函数创建对象
+        function Person(name, age, sex) {
+            // new 关键字自动做的事情
+            // 1. 自动创建一个空对象，把这个对象的地址给 this
+            // var this = new Object();
+
+            // 2. 通过 this 给空对象绑定属性和行为
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+
+            // 3. 自动返回 this，也就是把创建出来的对象返回回去
+            // return this;
+        }
+        var p = new Person();
+    </script>
+</body>
+</html>

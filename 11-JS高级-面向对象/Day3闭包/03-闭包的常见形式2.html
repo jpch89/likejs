@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function logMsgDeley(msg, time) {
+        setTimeout(function () {
+            debugger;
+            console.log(msg);
+        }, time);
+    }
+
+    logMsgDeley("延时消息", 1000);
+</script>
+</body>
+</html>

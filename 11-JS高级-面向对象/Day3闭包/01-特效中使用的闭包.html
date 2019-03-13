@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <!-- 需求：点击某个按钮，提示“点击的是第 n 个按钮” -->
+    <script>
+        var btns = document.getElementsByTagName("button");
+        for (var i = 0; i < btns.length; i++) {
+            (function (i) {
+                var btn = btns[i];
+                btn.onclick = function () {
+                    alert("点击" + (i + 1) + "个");
+                }
+            })(i);
+        }
+    </script>
+    <script>
+        function fn1() {
+            var num = 10;
+            function fn2() {
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+</html>

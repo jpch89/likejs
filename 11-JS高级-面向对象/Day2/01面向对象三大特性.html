@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var p1 = {
+        name: "张三",
+        age: 18,
+        address: "上海"
+    };
+    var p2 = {
+
+    };
+
+    // 继承：继承资源
+    for (var k in p1) {
+        p2[k] = p1[k];
+    }
+
+    console.log(p2);
+</script>
+</body>
+</html>

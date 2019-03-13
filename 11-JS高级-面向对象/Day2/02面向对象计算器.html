@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/html">
+    var Calculator = {
+        // 结果
+        result: 0,
+        // 行为
+        jia: function (num) {
+            this.result += num;
+        },
+        jian: function (num) {
+            this.result -= num;
+        },
+        cheng: function (num) {
+            this.result *= num;
+        },
+        chu: function (num) {
+            this.result /= num;
+        },
+        log: function () {
+            console.log(this.result);
+        }
+    };
+
+    // (6 + 6) * 2 / 3 - 4
+    Calculator.jia(6);
+    Calculator.jia(6);
+    Calculator.cheng(2);
+    Calculator.chu(3);
+    Calculator.jian(4);
+    Calculator.log();
+</script>
+<script>
+    // 使用链式调用优化
+    var Calculator = {
+        // 结果
+        result: 0,
+        // 行为
+        jia: function (num) {
+            this.result += num;
+            return this;
+        },
+        jian: function (num) {
+            this.result -= num;
+            return this;
+        },
+        cheng: function (num) {
+            this.result *= num;
+            return this;
+        },
+        chu: function (num) {
+            this.result /= num;
+            return this;
+        },
+        log: function () {
+            console.log(this.result);
+            return this;
+        },
+        clean: function () {
+            this.result = 0;
+            return this;
+        }
+    };
+
+    // (6 + 6) * 2 / 3 - 4
+    Calculator.jia(6).jia(6).cheng(2).chu(3).jian(4).log();
+    Calculator.clean().jia(2).log();
+
+</script>
+</body>
+</html>

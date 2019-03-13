@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Dog(option) {
+        // 属性
+        this.name = option.name;
+        this.age = option.age;
+        this.dogFriends = option.dogFriends;
+    }
+
+    Dog.prototype = {
+        eat: function (something) {
+            console.log(this.name + "吃" + something);
+        },
+        run: function (somewhere) {
+            console.log(this.name + "跑" + somewhere);
+        }
+    };
+
+    // 创建对象
+    var smallDog = new Dog({name: "小花", age: 1, dogFriends: ["呵呵", "哒哒"]});
+    var bigDog = new Dog({name: "大花", age: 1, dogFriends: ["呵呵", "哒哒"]});
+    console.log(smallDog.eat === bigDog.eat);  // true
+
+</script>
+</body>
+</html>

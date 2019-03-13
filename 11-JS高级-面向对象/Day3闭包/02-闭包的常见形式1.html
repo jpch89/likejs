@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function func1() {
+        var num  = 10;
+        function func2() {
+            num++;
+            console.log(num);
+        }
+        return func2;
+    }
+
+    f = func1();
+    f();  // 11
+    f();  // 12
+</script>
+</body>
+</html>
