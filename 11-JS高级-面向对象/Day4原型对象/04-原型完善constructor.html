@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person () {
+    };
+
+    var p = new Person();
+    console.log(p.constructor.name);  // Person
+
+    Person.prototype = {
+        "name": "long",
+        "age": 88
+    };
+
+    var p2 = new Person();
+    console.log(p2.constructor.name);  // Object
+
+    Person.prototype = {
+        constructor: Person,  // 一定要设置，否则指向 Object
+        "name": "li",
+        "age": 6
+    };
+    var p3 = new Person();
+    console.log(p3.constructor.name);  // Person
+</script>
+</body>
+</html>

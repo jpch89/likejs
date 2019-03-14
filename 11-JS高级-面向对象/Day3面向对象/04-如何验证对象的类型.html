@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    var p = new Person("大大", 11);
+    console.log(p instanceof Person);  // true
+    console.log([1, 2, 3] instanceof Person);  // false
+
+    console.log(p instanceof Object);  // true
+    console.log([1, 2] instanceof Object);  // true
+</script>
+</body>
+</html>

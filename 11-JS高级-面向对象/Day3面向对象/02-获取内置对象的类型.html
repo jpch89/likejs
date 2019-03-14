@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var obj = {"name": "张三"};
+    console.log(typeof obj);  // object
+    console.log(obj.toString());  // [object Object]
+    console.log(obj.constructor.name);  // Object
+
+    var arr = [1, 2, 3];
+    console.log(typeof arr);  // object
+    console.log(arr.toString());  // 1,2,3
+
+    // 怎样获取到 Array，即它的构造函数呢？
+    // prototype 是原型库，constructor 是构造函数
+    console.log(arr.constructor);  // ƒ Array() { [native code] }
+    console.log(arr.constructor.name);  // Array
+
+    var date = new Date();
+    console.log(typeof date);  // object
+    console.log(date.constructor.name);  // Date
+
+    // 还有一种方法，借调方法，查看祖先是不是 Object
+    Object.prototype.toString.call(date);  // 为什么我显示不出来？我去你没有 log！
+    console.log(Object.prototype.toString.call(date));  // [object Date]
+
+</script>
+</body>
+</html>

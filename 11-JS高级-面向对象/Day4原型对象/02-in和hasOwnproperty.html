@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    };
+    Person.prototype.address = "上海";
+    var p = new Person("校长", 18);
+    console.log("name" in p);  // true
+
+    // 下面是 false，是因为 name 是 window 上的一个未定义的全局变量
+    console.log(name in p);  // false
+
+    // 自身找不到，会到原型对象上去找
+    console.log("address" in p);  // true
+
+    // hasOwnProperty 判断是否是实例属性
+    console.log(p.hasOwnProperty("name"));  // true
+    console.log(p.hasOwnProperty("address"));  // false
+
+    // 作业：如何判断一个属性是原型对象属性，而不是实例属性
+    console.log("address" in p && !p.hasOwnProperty("address"));  // true
+
+</script>
+</body>
+</html>

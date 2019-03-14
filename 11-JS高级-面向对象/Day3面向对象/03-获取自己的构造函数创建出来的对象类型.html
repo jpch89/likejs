@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    function Dog(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    function Cat(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // 1. 实例化
+    var p = new Person("Lane", 18);
+    var d = new Dog("小花", 8);
+    var c = new Cat("小猫", 3);
+
+    console.log(typeof p);  // object
+    console.log(typeof d);  // object
+    console.log(typeof c);  // object
+
+    console.log(p.toString());  // [object Object]
+    console.log(d.toString());  // [object Object]
+    console.log(c.toString());  // [object Object]
+
+    console.log(Object.prototype.toString.call(p));  // [object Object]
+    console.log(Object.prototype.toString.call(d));  // [object Object]
+    console.log(Object.prototype.toString.call(c));  // [object Object]
+
+    console.log(p.constructor.name);  // Person
+    console.log(d.constructor.name);  // Dog
+    console.log(c.constructor.name);  // Cat
+</script>
+</body>
+</html>

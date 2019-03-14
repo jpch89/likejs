@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // 原型对象
+    Person.prototype.run = function () {
+        console.log("跑！！！");
+    };
+
+    // 访问原型对象
+    // 方式一
+    console.log(Person.prototype);
+
+    // 方式二
+    var p = new Person();
+    console.log(p.__proto__);
+
+    // 可以修改构造函数的原型对象
+</script>
+</body>
+</html>
